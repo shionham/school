@@ -1,0 +1,9 @@
+package animalmal;
+
+public class animal {
+	
+	void printInfo() {
+		System.out.println("animal Info");
+	}
+
+}
