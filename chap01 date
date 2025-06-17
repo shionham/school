@@ -1,0 +1,30 @@
+package chap01;
+
+public class date {
+	private int year;
+	private int month;
+	private int day;
+	
+	date(int year, int month, int day) {
+		this.year = year;
+		this.month = month;
+		this.day = day;
+	}
+	
+	void print1() {
+		System.out.println(year + "," + month + ", " + day);
+		
+	}
+
+	
+	void print2() {
+		String[] monStr = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"};
+		System.out.println(monStr [month-1] + "," + day + ", " + day);
+	}
+	
+	public static void main(String[] args) {
+		date d = new date(2025,5,2);
+		d.print1();
+		d.print2();
+	}
+}
