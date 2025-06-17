@@ -1,0 +1,26 @@
+package chap01;
+
+public class movie {
+	private String title;
+	private double grade;
+	private String producer;
+	private String pub_year;
+	
+	movie(String title, double grade, String producer, String pub_year) {
+		this.title = title;
+		this.grade = grade;
+		this.producer = producer;
+		this.pub_year = pub_year;
+		
+	}
+	
+	void print() {
+		System.out.println("title : " + title + "grade : " + grade + "producer : " + producer + "pub_year : " + pub_year);
+		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+	
+}
