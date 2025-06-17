@@ -1,0 +1,8 @@
+package animalmal;
+
+public interface actions {
+	void sleep();
+	void play();
+	void sound();
+
+}
