@@ -1,0 +1,23 @@
+package animalmal;
+
+public class cat extends animal{
+	
+	void test() {
+		printInfo();
+	}
+
+	@Override
+	void printInfo() {
+		// TODO Auto-generated method stub
+	//	super.printInfo();
+		System.out.println("cat Info");
+	}
+	
+	public static void main(String[] args) {
+		cat cc = new cat();
+		cc.test();
+	}
+	
+	
+
+}
