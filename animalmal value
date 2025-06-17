@@ -1,0 +1,9 @@
+package animalmal;
+
+public class value {
+	String name;
+	int age;
+	int sex;
+	
+
+}
