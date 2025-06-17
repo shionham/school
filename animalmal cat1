@@ -1,0 +1,23 @@
+package animalmal;
+
+public class cat1 extends value implements actions{
+
+	@Override
+	public void sleep() {
+		// TODO Auto-generated method stub
+		System.out.println("엎드려 자기");
+		
+	}
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+	}
+
+}
