@@ -1,0 +1,61 @@
+package schooltest;
+
+public class Music {
+	
+		private String singer;
+	    private String title;
+	    private String year;
+	    private String company;
+	    private long views;
+
+	    public Music(String singer, String title, String year, String company, long views) {
+	        this.singer = singer;
+	        this.title = title;
+	        this.year = year;
+	        this.company = company;
+	        this.views = views;
+	    }
+
+	    public String getSinger() {
+	        return singer;
+	    }
+
+	    public String getTitle() {
+	        return title;
+	    }
+
+	    public String getYear() {
+	        return year;
+	    }
+
+	    public String getCompany() {
+	        return company;
+	    }
+
+	    public long getViews() {
+	        return views;
+	    }
+
+	    // 복합 조건 메소드 예시
+	    public boolean isViewsMatch(long ref, String op) {
+	        return switch (op) {
+	            case ">" -> views > ref;
+	            case "<" -> views < ref;
+	            case "==" -> views == ref;
+	            default -> false;
+	        };
+	    }
+
+	    public void printBasic() {
+	        System.out.println("가수: " + singer + ", 노래: " + title);
+	    }
+
+	    public void printFull() {
+	        System.out.println("노래: " + title + ", 연도: " + year + ", 소속사: " + company + ", 조회수: " + views);
+	    }
+	}
+
+	
+
+
+
