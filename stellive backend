@@ -1,0 +1,53 @@
+package stellive;
+
+public class backend {
+	
+	private String name;
+	private String height;
+	private String age;
+	private String company;
+	private long views;
+	
+	public backend(String name, String height, String age, String company, long views) {
+		this.name = name;
+		this.age = age;
+		this.height = height;
+		this.company = company;
+		this.views = views;
+	}
+	
+	public String getname() {
+		return name;
+	}
+	public String getheight() {
+		return height;
+	}
+	public String getage() {
+		return age;
+	}
+	public String getcompany() {
+		return company;
+	}
+	public long getviews() {
+        return views;
+    }
+	
+	
+	public boolean isViewsMatch(long ref, String op) {
+        return switch (op) {
+            case ">" -> views > ref;
+            case "<" -> views < ref;
+            case "==" -> views == ref;
+            default -> false;
+        };
+	}
+		
+	public void printbasic() {
+		System.out.println("이름 : " + name);
+	}
+	
+	public void printfull() {
+		System.out.println("키 : " + height + ", 세대 : " + age + ", 소속사 : " + company + ", 구독자 수 : " + views);
+
+	}
+}
