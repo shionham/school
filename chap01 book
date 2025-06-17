@@ -1,0 +1,36 @@
+package chap01;
+
+public class book {
+	private String title;
+	private String Author;
+	
+	public String getTitle() {
+		return title;
+		}
+	
+	public void setTitle(String title) {
+		this.title = title;
+		
+	}
+	
+	public String getAuthor() {
+		return Author;
+		
+	}
+	
+	public void setAuthor(String author) {
+		Author = author;
+		
+	}
+	void printInfo() {
+		System.out.println("title : " + title + "Author : " + Author);
+	}
+	
+	public static void main(String[] args) {
+		book b = new book();
+		b.setTitle("흰");
+		b.setAuthor("한강");
+		b.printInfo();
+	}
+
+}
