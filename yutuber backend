@@ -1,0 +1,53 @@
+package yutuber;
+
+public class backend {
+	
+	private String name;
+	private String height;
+	private String from;
+	private String type;
+	private long views;
+	
+	public backend(String name, String height, String from, String type, long views) {
+		this.name = name;
+		this.height = height;
+		this.from = from;
+		this.type = type;
+		this.views = views;
+	}
+	
+	public String getname() {
+		return name;
+	}
+	public String getheight() {
+		return height;
+	}
+	public String getfrom() {
+		return from;
+	}
+	public String gettype() {
+		return type;
+	}
+	public long getviews() {
+        return views;
+    }
+	
+	
+	public boolean isViewsMatch(long ref, String op) {
+        return switch (op) {
+            case ">" -> views > ref;
+            case "<" -> views < ref;
+            case "==" -> views == ref;
+            default -> false;
+        };
+	}
+		
+	public void printbasic() {
+		System.out.println("이름 : " + name);
+	}
+	
+	public void printfull() {
+		System.out.println("키 : " + height + ", from : " + from + ", type : " + type + ", 구독자 수 : " + views);
+
+	}
+}
