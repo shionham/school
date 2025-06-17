@@ -1,0 +1,41 @@
+package chap01;
+
+public class Rectangle {
+	private int w;
+	private int h;
+	
+	public Rectangle(int w, int h) { // 여기 퍼블릭을 씀으로써 어디서든 호출 가능
+		this.w = w;
+		this.h = h;
+	}
+	
+	public void setW(int w) { 
+		this.w = w;
+	}
+	
+	public void setH(int h) {
+		this.h = h;
+	}
+	
+	public void setValues(int w, int h) {
+		this.w = w;
+		this.h = h;
+	}
+	
+	public int perimeter() {
+		return w * h;
+	}
+	
+	public static void main(String[] args) {
+		Rectangle r = new Rectangle(5, 5);
+		System.out.println("perimeter = " + r.perimeter());
+		r.setW(10);
+		System.out.println("perimeter = " + r.perimeter());
+		r.setH(10);
+		System.out.println("perimeter = " + r.perimeter());
+		r.setValues(20,20);
+		System.out.println("perimeter = " + r.perimeter());
+		
+	}
+
+}
