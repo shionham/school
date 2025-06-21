@@ -1,0 +1,42 @@
+package chap01;
+
+import java.util.Scanner;
+
+public class sion {
+	
+	void ex1() {
+		
+		String[] info = new String[3];
+		
+		Scanner in = new Scanner(System.in);
+		
+		for (int i = 0; i < 3; i++) {
+			
+			switch (i) {
+			case 0:
+				System.out.println("Enter name : ");
+				break;
+			case 1:
+				System.out.println("Enter dept : ");
+				break;
+			case 2:
+				System.out.println("Enter grade : ");
+				break;
+	}
+			
+			
+			
+			info[i] = in.nextLine();
+}
+			
+			System.out.println(info[0] + "은" + info[1] + " " + info[2] + "학년입니다");
+			
+			in.close();
+}
+			
+		public static void main(String[] args) {
+			
+			sion myLect = new sion();
+			myLect.ex1();
+			}
+	}
