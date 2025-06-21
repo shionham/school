@@ -1,0 +1,24 @@
+package chap01;
+import java.util.Scanner;
+public class sion {
+
+	void ex1() {
+		Scanner input = new Scanner(System.in);
+
+	System.out.println("Enter name : ");
+	String name = input.nextLine();
+	System.out.println("Enter dept : ");
+	String dept = input.nextLine();
+	System.out.println("Enter grade : ");
+	String grade = input.nextLine();
+
+	System.out.println(name + "은" + dept + " " + grade + "학년입니다");
+
+	input.close();
+}
+
+	public static void main(String[] args) {
+		sion myLect = new sion();
+		myLect.ex1();
+	}
+}
