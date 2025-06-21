@@ -1,0 +1,31 @@
+package chap01;
+
+import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+public class sion {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("년을 입력하세요: ");
+        int year = scanner.nextInt();
+        
+        System.out.print("월을 입력하세요: ");
+        int month = scanner.nextInt();
+        
+        System.out.print("일을 입력하세요: ");
+        int day = scanner.nextInt();
+        
+        LocalDate startDate = LocalDate.of(1900, 1, 1);
+        
+        LocalDate inputDate = LocalDate.of(year, month, day);
+        
+        long daysBetween = ChronoUnit.DAYS.between(startDate, inputDate);
+        
+        System.out.println(inputDate + "은(는) 1900년 1월 1일부터 " + (daysBetween + 1) + "번째 날입니다.");
+        
+        scanner.close();
+    }
+}
+
