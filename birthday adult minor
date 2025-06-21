@@ -1,0 +1,31 @@
+package chap01;
+
+		import java.util.Scanner;
+		import java.time.LocalDate;
+		import java.time.Period;
+
+		public class sion {
+		    public static void main(String[] args) {
+		        Scanner scanner = new Scanner(System.in);
+		        
+		        System.out.print("생년월일을 입력하세요 (yyyy-mm-dd): ");
+		        String birthDateStr = scanner.nextLine();
+		        
+		        LocalDate birthDate = LocalDate.parse(birthDateStr);
+		        
+		        LocalDate today = LocalDate.now();
+		        
+		        Period age = Period.between(birthDate, today);
+		        
+		        if (age.getYears() >= 18) {
+		            System.out.println("성년");
+		        } else {
+		            System.out.println("미성년");
+		        }
+
+		        scanner.close();
+		    }
+		}
+
+
+
