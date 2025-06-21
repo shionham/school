@@ -1,0 +1,48 @@
+
+	
+package chap01;
+
+import java.util.Scanner;
+
+public class sion2 {
+	
+	void ex01() {
+		
+		int i,j;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter sentence : " );
+		String x = sc.nextLine();
+		sc.close();
+		
+		String apple = x.replace(" ", "");
+		int[] appear = new int[apple.length()];
+		for ( i = 0; i < apple.length(); i++ ) {
+			appear[i] = 0;
+			for ( j = i; j < apple.length(); j++ ) {
+				if ( apple.charAt(i) == apple.charAt(j))
+					appear[i]++;
+		
+		}
+	}
+		int maxPtr = 0;
+		for ( i = 0; i < apple.length(); i++ ) {
+			if ( appear[i] > maxPtr )
+				maxPtr = i;
+		}
+		
+		System.out.println("Max frequent char : " + apple.charAt(maxPtr) + ", count : " + appear[maxPtr]);
+	}
+	
+	
+	
+	
+	
+	
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			sion2 mylect = new sion2();
+			mylect.ex01();
+		}
+	}
+	
