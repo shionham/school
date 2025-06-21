@@ -1,0 +1,29 @@
+package chap01;
+
+import java.util.Scanner;
+
+public class sion {
+	
+	void ex01() {
+		
+		int i;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter sentence : " );
+		String x = sc.nextLine();
+		sc.close();
+		
+		int cnt =0;
+		for (i =0; i < x.length(); i++) {
+			if (x.charAt(i) == ' ')
+				cnt++;
+		}
+		System.out.println("black count : " + cnt);
+	}
+		
+			
+	public static void main(String[] args) {
+		sion mylect = new sion();
+		mylect.ex01();
+	}
+}
