@@ -1,0 +1,22 @@
+package chap01;
+
+import java.util.Scanner;
+
+public class sion {
+	
+	void ex01() {
+		Scanner in = new Scanner(System.in);
+		System.out.println("enter sentence : ");
+		
+		String x = in.nextLine();
+		
+		in.close();
+		
+		System.out.println("lower case : " + x.toLowerCase());
+	}
+	
+public static void main(String[] args) {
+	sion mylect = new sion();
+	mylect.ex01();
+}
+}
