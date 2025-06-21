@@ -1,0 +1,24 @@
+package chap01;
+
+
+public class sion {
+	public static void main(String[] args) {
+		String s = "i like java.";
+		String s1 = "java";
+		
+		System.out.println(s);
+		System.out.println(s.length());
+		
+		System.out.println(s1);
+		System.out.println(s1.length());
+		
+		if (s.length() > 5) {
+			System.out.println("장문"); 
+}
+		if (s1.length() < 5)
+			System.out.println("단문");
+		}
+}
+	
+
+
