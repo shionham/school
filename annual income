@@ -1,0 +1,70 @@
+package lect0404;
+
+import java.util.Scanner;
+
+public class ex_01 {
+
+	void fn_01() {
+		int Salary = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("월급을 입력하세요 ");
+		Salary = sc.nextInt();
+		
+//		int anualSalary = Salary * 12;
+//		int bonus = Salary * 5;
+//		anualSalary += bonus;
+//		System.out.println("최종 연봉은 : " + anualSalary);	
+		
+		System.out.println("최종 연봉은 : " + (calcSalary(Salary) + calcBonus(Salary,5)));
+		sc.close();
+	}
+	
+	int calcSalary(int salary) {
+		return salary * 12;
+	}
+	int calcBonus(int base, int percent) {
+		return base * percent;
+	}
+	
+	void calcMain() {
+		System.out.println("덧셈 결과는 : " + calcAdd(5,10));
+	}
+	int calcAdd(int value1, int value2) {
+		return value1 + value2;
+	}
+	
+	void exMatrix() {
+		int[] score = new int[5];
+		score[0] = 100;
+		score[1] = 96;
+		score[2] = 88;
+		score[3] = 78;
+		score[4] = 65;
+		
+		int[] korean = { 100,87,56,64,44 };	//	new int[5];
+
+		for ( int i = 0; i < 5; i++ ) {
+			score[i] = 88 + i;
+		}
+		
+		int[][] grade = new int[5][3];
+		grade[2][2] = 88;
+		
+		int[][] sample = { {10,11,12},
+						{20,21,22},
+						{30,31,32} 
+						};
+		
+		System.out.println(sample[1][1]);	// 21
+		
+		double value = Math.random() * 10;	// 0.0 ~ 1.0 => 0 ~ 10.0
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ex_01 ex = new ex_01();
+//		ex.fn_01();
+		ex.calcMain();
+	}
+
+}
